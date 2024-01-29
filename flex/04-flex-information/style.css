@@ -10,6 +10,8 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  text-align: center;
+  margin: 32px;
 }
 
 /* do not edit this footer */
@@ -24,3 +26,25 @@ img {
   justify-content: center;
   background: #eee;
 }
+
+.info {
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+}
+
+.item {
+  /* display: flex;*/
+  width: 200px; 
+  text-align: center;
+  /* flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
+
+/* Note: Sometimes the solution is simpler than you think. In this case,
+    instead of making each item a flex container to stack the picture and text,
+    I could've adjusted the width, so the text wrapped to the next line.
+
+    I also could've just centered all the text in the body instead of individually.
+*/
