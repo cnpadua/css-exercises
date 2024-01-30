@@ -67,3 +67,44 @@ button.cancel {
   border: 1px solid #ddd;
   color: royalblue;
 }
+
+/* my solution */
+
+.modal {
+  display: flex; 
+  padding: 16px;
+  /* Adding the gap property here keeps header text and text block aligned.*/
+  gap: 16px;
+}
+
+.icon {
+  flex-shrink: 0;
+}
+
+
+/* 
+
+This is what was making my buttons too wide.
+By default buttons display mode is inline-block, which is why they are displayed
+right next to eachother.
+When put in a flex container, they stretched to fit the container.
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 10px;
+}  */
+
+
+
+ .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  /* margin: 8px; */
+}
+
+.text {
+  margin-bottom: 8px;
+}
+
